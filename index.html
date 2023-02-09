@@ -8,15 +8,68 @@
     <title>Your Data</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
+    700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/19533f32e4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
 
 
     <div class="wrapper">
-     
+        <div class="settings">
+            <h1>Ustawienia</h1>
+            <label for="event-name">Nazwa wydarzenia:</label>
+            <input type="text" id="event-name" value="Nowy rok">
+            <table class="date">
+                <tr>
+                    <td> <label for="event-day">Dzień:</label></td>
+                    <td> <label for="event-month">Miesiąc:</label></td>
+                    <td> <label for="event-year">Rok:</label></td>
+                </tr>
+
+
+                <tr>
+                    <td><input type="number" id="event-day" min="1" max="31" value="1"></td>
+                    <td><input type="number" id="event-month" min="1" max="12" value="1"></td>
+                    <td><input type="number" id="event-year" min="4" max="4" value="2024"></td>
+                </tr>
+
+            </table>
+            <label for="event-image">Link do obrazka:</label>
+            <input type="text" id="event-image" value="default.jpg">
+            <button class="save">Zapisz</button>
+        </div>
+        <div class="image-section">
+            <div class="settings-btn"><i class="fas fa-sliders-h"></i></div>
+        </div>
+        <div class="time-section">
+            <h3>
+                <span class="event"></span>
+                za
+            </h3>
+            <div class="time-cards">
+                <div class="card">
+                    <p class="days-count number">1</p>
+                    <p class="card-title"></p>
+                </div>
+                <div class="card">
+                    <p class="-count-hours number">1</p>
+                    <p class="card-title"></p>
+                </div>
+                <div class="card">
+                    <p class="days-minutes number">1</p>
+                    <p class="card-title"></p>
+                </div>
+                <div class="card">
+                    <p class="days-seconds number">1</p>
+                    <p class="card-title"></p>
+                </div>
+
+            </div>
+        </div>
     </div>
 
 
